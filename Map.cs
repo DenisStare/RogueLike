@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace ConsoleTexts;
+namespace CocoNutEngine;
 
 class Map
 {
