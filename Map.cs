@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace CocoNutEngine;
+namespace PathGen;
 
 class Map
 {
