@@ -1,5 +1,5 @@
 ﻿using System.Text;
-using CoconutEngine;
+using ConsoleTexts;
 
 var GAME_SIZE = (height: 64, width: 20);
 
