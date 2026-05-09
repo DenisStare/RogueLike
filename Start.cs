@@ -1,13 +1,14 @@
 ﻿using System.Text;
-using PathGen;
+using TeXt;
 
-var GAME_SIZE = (height: 64, width: 20);
+var display = new Display(16, 64);
+display.Fill('#');
 
-var map = new Map(GAME_SIZE.height, GAME_SIZE.width);
-map.GenerateMap();
-
+ConsoleKeyInfo key;
 while (true)
 {
-    map.DisplayMap();
-}
+    display.DisplayContents();
+    key = Console.ReadKey();
 
+    if (key.Key == ConsoleKey.Escape) break;
+}
