@@ -1,8 +1,8 @@
-﻿using System.Text;
-using TeXt;
+﻿using TeXt;
 
-var display = new Display(16, 64);
-display.Fill('#');
+var display = new Display(16, 32, '#');
+var mapGenerator = new MapGenerator('.', '#');
+mapGenerator.Generate(display, 200);
 
 ConsoleKeyInfo key;
 while (true)
